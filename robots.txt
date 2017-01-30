@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /files/
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /files/images/*
+
+User-agent: MSNBot-Media
+Allow: /files/images/*
+
+User-agent: YandexImages
+Allow: /files/images/*
+
+Sitemap: /sitemap.xml
+Sitemap: /sitemap-index.xml
+Sitemap: /sitemap-kategoriler.xml
+Sitemap: /sitemap-filmler.xml
+Sitemap: /sitemap-oyunlar.xml
+Sitemap: /sitemap-programlar.xml
+Sitemap: /sitemap-diziler.xml
+Sitemap: /sitemap-dizi-bolumler.xml

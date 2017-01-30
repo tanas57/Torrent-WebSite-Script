@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+.el-buton{
+	cursor:pointer;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/bg.png);
+	background-repeat: repeat;
+	}
+#site {
+	height: 400px;
+	width: 700px;
+	background-image: url(images/mainbg.png);
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	}
+#sitebosluk {
+	height: 200px;
+	width: 700px;
+	float:left;
+	}
+#ortainput {
+	float:left;
+	width:700px;
+	height:75px;
+	}
+#kullaniciadi {
+	float:left;
+	width:350px;
+	}
+#kullaniciadi label {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+	width:150px;
+	float:left;
+	margin-left: 100px;
+	}
+#kullaniciadiinput {
+	background-image: url(images/kull.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height:32px;
+	width:220px;
+	border:0px;
+	margin-left: 100px;
+	margin-top: 10px;
+	float: left;
+	background-position: 0px 0px;
+	text-decoration: none;
+	text-indent: 30px;
+	}
+#kullaniciadiinput input {
+	background-color: transparent;
+	border:0px;
+	width:180px;
+	height:31px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #2c75a7;
+	text-decoration: none;
+	font-weight: bold;
+	}
+#sifre {
+	float: left;
+	width: 300px;
+	}
+#sifre label {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 20px;
+	width:150px;
+	float:left;
+	}
+#sifreinput {
+	background-image: url(images/sifre.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height:32px;
+	width:220px;
+	border:0px;
+	margin-top: 10px;
+	float: left;
+	background-position: 0px 0px;
+	text-decoration: none;
+	text-indent: 30px;
+	}
+#sifreinput input {
+	background-color: transparent;
+	border:0px;
+	width:180px;
+	height:31px;
+	margin-left: 3px;
+	font-weight: bold;
+	color: #2c75a7;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+#alt {
+	width:700px;
+	height:40px;
+	float:left;
+	}
+#hata {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	margin-top: 25px;
+	float: left;
+	width: 350px;
+	margin-left: 105px;
+	}
+#hata img {
+	margin-top: 15px;
+	}
+#hata a {
+	color: #f1a50a;
+	text-decoration: none;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+#girisyap {
+	float:left;
+	width:115px;
+	height:37px;
+	margin-right: 30px;
+	}
+#girisyap input {
+	background-image: url(images/girisyap.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 37px;
+	width: 115px;
+	border:0px;
+	text-indent: -99999px;
+	background-color: transparent;
+	margin-top: 30px;
+}

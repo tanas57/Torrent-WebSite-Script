@@ -1,0 +1,61 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fulltorrentler.com
+RewriteRule (.*) http://www.fulltorrentler.com/$1 [R=301,L]
+
+RewriteRule ^hata/$ /404.php [L,NC]
+RewriteRule ^torrent-ara/$ /search.php [L,NC]
+RewriteRule ^torrent-ara/(.*)/$ /search.php?sayfa=$1 [L,NC]
+
+RewriteRule ^hakkinda/$ /files/includes/page/hakkinda.php [L,NC]
+RewriteRule ^reklam/$ /files/includes/page/reklam.php [L,NC]
+RewriteRule ^iletisim/$ /files/includes/page/iletisim.php [L,NC]
+RewriteRule ^yasal/$ /files/includes/page/yasal.php [L,NC]
+
+RewriteRule ^sitemap.xml$ /files/includes/sitemaps/1.php [L,NC]
+RewriteRule ^sitemap-index.xml$ /files/includes/sitemaps/2.php [L,NC]
+RewriteRule ^sitemap-kategoriler.xml$ /files/includes/sitemaps/3.php [L,NC]
+RewriteRule ^sitemap-filmler.xml$ /files/includes/sitemaps/4.php [L,NC]
+RewriteRule ^sitemap-oyunlar.xml$ /files/includes/sitemaps/5.php [L,NC]
+RewriteRule ^sitemap-programlar.xml$ /files/includes/sitemaps/6.php [L,NC]
+RewriteRule ^sitemap-diziler.xml$ /files/includes/sitemaps/7.php [L,NC]
+RewriteRule ^sitemap-dizi-bolumler.xml$ /files/includes/sitemaps/8.php [L,NC]
+
+RewriteRule ^torrent/film-indir.html$ /films.php [L,NC]
+RewriteRule ^torrent/film-indir/(.*)/$ /films.php?sayfa=$1 [L,NC]
+RewriteRule ^torrent-film/(.*).html$ /filmDetail.php?film=$1 [L,NC]
+RewriteRule ^torrent-film/(.*).html/(.*)/$ /filmDetail.php?film=$1&respond=$2 [L,NC]
+RewriteRule ^torrent-film/(.*)/(.*)/$ /filmCategory.php?cat=$1&sayfa=$2 [L,NC]
+RewriteRule ^torrent-film/(.*)/$ /filmCategory.php?cat=$1 [L,NC]
+
+RewriteRule ^torrent/oyun-indir.html$ /games.php [L,NC]
+RewriteRule ^torrent/oyun-indir/(.*)/$ /games.php?sayfa=$1 [L,NC]
+RewriteRule ^torrent-oyun/(.*)/(.*)/$ /gameCategory.php?cat=$1&sayfa=$2 [L,NC]
+RewriteRule ^torrent-oyun/(.*)/$ /gameCategory.php?cat=$1 [L,NC]
+RewriteRule ^torrent-oyun/(.*).html$ /oyunDetail.php?oyun=$1 [L,NC]
+RewriteRule ^torrent-oyun/(.*).html/(.*)/$ /oyunDetail.php?oyun=$1&respond=$2 [L,NC]
+
+RewriteRule ^torrent/program-indir.html$ /programs.php [L,NC]
+RewriteRule ^torrent/program-indir/(.*)/$ /programs.php?sayfa=$1 [L,NC]
+RewriteRule ^torrent-program/(.*)/(.*)/$ /programCategory.php?cat=$1&sayfa=$2 [L,NC]
+RewriteRule ^torrent-program/(.*)/$ /programCategory.php?cat=$1 [L,NC]
+RewriteRule ^torrent-program/(.*).html$ /programDetail.php?program=$1 [L,NC]
+RewriteRule ^torrent-program/(.*).html/(.*)/$ /programDetail.php?program=$1&respond=$2 [L,NC]
+
+RewriteRule ^dizi/(.*)/$ /diziDetail.php?dizi=$1 [L,NC]
+RewriteRule ^dizi/(.*)/(.*)/$ /diziDetail.php?dizi=$1&respond=$2 [L,NC]
+RewriteRule ^torrent/dizi-indir.html$ /series.php [L,NC]
+RewriteRule ^torrent/dizi-indir/(.*)/$ /series.php?sayfa=$1 [L,NC]
+RewriteRule ^torrent-dizi/(.*)/(.*)/$ /diziCategory.php?cat=$1&sayfa=$2 [L,NC]
+RewriteRule ^torrent-dizi/(.*)/$ /diziCategory.php?cat=$1 [L,NC]
+RewriteRule ^torrent-dizi/(.*).html$ /diziIcDetail.php?bolum=$1 [L,NC]
+RewriteRule ^torrent-dizi/(.*).html/(.*)/$ /diziIcDetail.php?bolum=$1&respond=$2 [L,NC]
+
+<ifmodule mod_expires.c>
+  <filesmatch "\.(jpg|gif|png|css|js)$">
+       ExpiresActive on
+       ExpiresDefault "access plus 1 day"
+   </filesmatch>
+</ifmodule>
+
+SetOutputFilter DEFLATE
+DefaultLanguage tr-TR
