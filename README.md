@@ -18,3 +18,5 @@ Torrent dosyası paylaşım scriptidir. Sistemde; film, dizi, oyun ve program ka
 3. Yönetim paneline giriş yapınız "\admin\" olarak bulunuyor.
 4. Yönetim panelinden "Ayar" menüsünden site ayarlarını ve adres ayarını yapınız("http://localhost" yazan yeri site dizinine göre ayarlayın)
 5. Site kullanımına başlayabilirsiniz. Menüleri kullanarak ekleme, düzenleme ve silme işlemlerini yapabilirsiniz.
+
+<a href="http://www.fulltorrentler.com" rel="nofollow" target="_blank"># DEMO#</a>
